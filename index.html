@@ -1,0 +1,13 @@
+
+let cart=[];
+fetch('data/products.json').then(r=>r.json()).then(data=>{
+ const box=document.getElementById('products');
+ const render=(items)=>box.innerHTML=items.map(p=>`<div class='card'><h3>${p.name}</h3><p>₹${p.price}</p><button onclick='add(${p.id})'>Add to Cart</button></div>`).join('');
+ render(data);
+ window.add=id=>{cart.push(data.find(x=>x.id===id));alert('Added');};
+ document.getElementById('search').oninput=e=>render(data.filter(p=>p.name.toLowerCase().includes(e.target.value.toLowerCase())));
+ document.getElementById('checkout').onclick=()=>{
+   let msg='Order:%0A'+cart.map(x=>x.name+' ₹'+x.price).join('%0A');
+   location.href='https://wa.me/918777286437?text='+msg;
+ };
+});
