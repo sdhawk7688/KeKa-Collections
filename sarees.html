@@ -1,0 +1,66 @@
+# KeKa Collections
+
+An elegant, minimal, fully responsive saree e-commerce website built with pure HTML, CSS, and JavaScript. Ready to deploy on **GitHub Pages**.
+
+## Features
+
+- Clean, modern UI with White / Cream / Gold / Dark Maroon palette
+- Fully responsive (mobile-first)
+- Product listing with search and category filters
+- Category browsing with deep-linking
+- Product detail modal (image, fabric, color, occasion, availability)
+- Lazy-loaded images
+- SEO-friendly semantic HTML
+- No backend, no frameworks – pure static site
+- Easy to edit product data via `data/products.json`
+
+## Project Structure
+
+```
+/
+├── index.html          # Homepage
+├── sarees.html         # All sarees + search/filter
+├── categories.html     # Category cards
+├── about.html
+├── contact.html
+├── css/style.css
+├── js/app.js
+├── data/products.json  # All product data
+├── images/             # Place your saree images here
+└── README.md
+```
+
+## How to Use
+
+1. **Add images**  
+   Place your saree photos in the `images/` folder and update the `image` paths in `data/products.json` if needed (currently `images/saree1.jpg` … `images/saree12.jpg`).
+
+2. **Edit products**  
+   Open `data/products.json` and add / edit / remove items. Follow the existing format (include `fabric`, `color`, `occasion`, `availability` for full detail view).
+
+3. **Customize colors / fonts**  
+   Edit CSS variables at the top of `css/style.css`.
+
+4. **Deploy to GitHub Pages**
+   - Push this repo to GitHub
+   - Go to **Settings → Pages**
+   - Source: Deploy from branch `main` (root)
+   - Your site will be live at `https://yourusername.github.io/repo-name/`
+
+## Local Preview
+
+Simply open `index.html` in a browser, or use a local server:
+
+```bash
+# Python
+python -m http.server 8000
+
+# Node (npx)
+npx serve .
+```
+
+> Note: Fetching `products.json` requires a local server (or GitHub Pages). Opening the file directly via `file://` may be blocked by CORS.
+
+## License
+
+Open source – free to use, modify, and distribute.
