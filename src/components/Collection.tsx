@@ -7,7 +7,7 @@ export interface Product {
   category: 'Saree' | 'Kurti';
   image: string;
   description: string;
-  price: number;
+  price?: number;
 }
 
 export const sarees: Product[] = [
