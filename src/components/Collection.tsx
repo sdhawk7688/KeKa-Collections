@@ -280,19 +280,19 @@ function ProductCard({ product }: { product: Product }) {
     {product.name}
   </h3>
 
-  <div className="flex items-center gap-2 mb-3">
-<div style={{ color: 'red', fontSize: '30px', fontWeight: 'bold' }}>
-  PRICE: {product.price}
+<div className="flex items-center gap-2 mb-3">
+  <span className="text-xl font-bold text-red-600">
+    PRICE: ₹{product.price}
+  </span>
+
+  <span className="text-sm text-gray-400 line-through">
+    ₹{Math.round((product.price ?? 0) / 0.7)}
+  </span>
+
+  <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">
+    30% OFF
+  </span>
 </div>
-
-    <span className="text-sm text-gray-400 line-through">
-      ₹{Math.round((product.price ?? 0) / 0.7)}
-    </span>
-
-    <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">
-      30% OFF
-    </span>
-  </div>
 
   <p className="text-xs text-forest-700/60 leading-relaxed line-clamp-2">
     {product.description}
