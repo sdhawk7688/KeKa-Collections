@@ -281,9 +281,9 @@ function ProductCard({ product }: { product: Product }) {
   </h3>
 
   <div className="flex items-center gap-2 mb-3">
-    <span className="text-xl font-bold text-forest-600">
-      ₹{product.price}
-    </span>
+<div style={{ color: 'red', fontSize: '30px', fontWeight: 'bold' }}>
+  PRICE: {product.price}
+</div>
 
     <span className="text-sm text-gray-400 line-through">
       ₹{Math.round((product.price ?? 0) / 0.7)}
