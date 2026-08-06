@@ -298,6 +298,7 @@ function ProductCard({ product }: { product: Product }) {
     {product.description}
   </p>
 </div>
+      </div>
   );
 }
 
