@@ -6,8 +6,8 @@ export default function Hero() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/KeKa-Collections/logo.png"
-          alt="KeKa Collections"
+          src="https://images.pexels.com/photos/27575104/pexels-photo-27575104.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Saree model"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-forest-900/90 via-forest-800/70 to-forest-700/40" />
