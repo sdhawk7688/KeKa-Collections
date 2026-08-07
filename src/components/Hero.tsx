@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src=src="/KeKa-Collections/logo.png"
+          src="/KeKa-Collections/logo.png"
           alt="KeKa Collections"
           className="w-full h-full object-cover object-center"
         />
