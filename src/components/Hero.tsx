@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img
           src=src="/KeKa-Collections/logo.png"
-          alt="Saree model"
+          alt="KeKa Collections"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-forest-900/90 via-forest-800/70 to-forest-700/40" />
