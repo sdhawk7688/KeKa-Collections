@@ -312,8 +312,10 @@ export default function Collection({ id, title, subtitle, products }: { id: stri
           <p className="text-forest-700/70 text-base leading-relaxed">{subtitle}</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((p) => (
-            <ProductCard key={p.id} product={p} />
+          {[...products]
+  .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity))
+  .map((p) => (
+    <ProductCard key={p.id} product={p} />
           ))}
         </div>
       </div>
