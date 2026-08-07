@@ -371,14 +371,6 @@ export const sarees: Product[] = [
   price: 1800,
   description: 'Replica Pochampally Ikat Saree with matching blouse piece featuring traditional woven patterns and elegant craftsmanship.',
 },
-{
-  id: 46,
-  name: 'Replica Pochampally Ikat Saree With Blouse Piece',
-  category: 'Saree',
-  image: '/KeKa-Collections/images/products/replica1 (22).jpeg',
-  price: 2000,
-  description: 'Replica Pochampally Ikat Saree with matching blouse piece featuring traditional woven patterns and elegant craftsmanship.',
-},
 ];
 
 export const kurtis: Product[] = [
