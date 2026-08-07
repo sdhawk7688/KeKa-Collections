@@ -27,17 +27,23 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
+
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-3 group">
+        <a href="#home" className="flex items-center gap-3">
           <img
-            src="/ChatGPT_Image_Jul_29,_2026,_05_06_19_PM.png"
-            alt="KeKa Collections Logo"
-            className="h-12 w-12 object-contain rounded-full"
+            src="/KeKa-Collections/logo.png"
+            alt="KeKa Collections"
+            className="h-12 w-auto"
           />
-          <div className="leading-tight">
-            <span className="block font-display text-xl font-semibold text-forest-600 tracking-wide">KeKa</span>
-            <span className="block text-[10px] font-medium text-gold-600 tracking-[0.2em] uppercase">Collections</span>
+
+          <div>
+            <h1 className="font-display text-2xl text-forest-600">
+              KeKa
+            </h1>
+            <p className="text-xs tracking-[0.3em] uppercase text-gold-500">
+              Collections
+            </p>
           </div>
         </a>
 
