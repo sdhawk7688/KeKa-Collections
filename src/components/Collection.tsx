@@ -195,14 +195,6 @@ export const sarees: Product[] = [
   price: 2200,
   description: 'Premium Cotton Silk Saree with matching blouse piece, offering a soft feel, rich texture and elegant traditional styling.',
 },
-{
-  id: 24,
-  name: 'Semi & Pure Gadwal Silk & Pattu Sarees',
-  category: 'Saree',
-  image: '/KeKa-Collections/images/products/image (25).jpeg',
-  price: 2000,
-  description: 'Beautiful Semi & Pure Gadwal Silk and Pattu Saree featuring classic weaving, vibrant colours and a graceful drape for festive occasions.',
-},
   {
   id: 25,
   name: 'Replica Pochampally Ikat Saree With Blouse Piece',
