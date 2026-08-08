@@ -25,54 +25,32 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#f0e8d9] shadow-md shadow-forest-500/10'
-          : 'bg-[#f0e8d9]'
+          ? 'bg-cream-200 shadow-md shadow-forest-500/10 backdrop-blur-sm'
+          : 'bg-transparent'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
 
-        {/* =====================================================
-            LOGO
-            Shows only the upper Peacock + K from logo.png
-            with KeKa Collections text beside it.
-        ====================================================== */}
-        <a
-          href="#home"
-          className="flex items-center gap-3 shrink-0"
-          aria-label="KeKa Collections"
-        >
-          {/* Cropped upper part of the existing logo */}
-          <div
-            className="relative w-[88px] h-[68px] overflow-hidden shrink-0"
-            style={{ backgroundColor: '#f0e8d9' }}
-          >
-            <img
-              src="/KeKa-Collections/logo.png"
-              alt="KeKa logo"
-              className="absolute max-w-none h-auto w-[190px]"
-              style={{
-                left: '-43px',
-                top: '-10px',
-                mixBlendMode: 'multiply',
-              }}
-            />
-          </div>
+        {/* Logo */}
+        <a href="#home" className="flex items-center gap-3">
+          <img
+            src="/KeKa-Collections/logo.png"
+            alt="KeKa Collections"
+            className="h-12 w-auto object-contain"
+          />
 
-          {/* Brand text */}
-          <div className="leading-none">
+          <div>
             <h1 className="font-display text-2xl text-forest-600">
               KeKa
             </h1>
 
-            <p className="text-xs tracking-[0.3em] uppercase text-gold-500 mt-1">
+            <p className="text-xs tracking-[0.3em] uppercase text-gold-500">
               Collections
             </p>
           </div>
         </a>
 
-        {/* =====================================================
-            DESKTOP NAVIGATION
-        ====================================================== */}
+        {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map(({ label, href }) => (
             <li key={label}>
@@ -88,9 +66,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* =====================================================
-            SHOP NOW BUTTON
-        ====================================================== */}
+        {/* Shop Now */}
         <a
           href="#contact"
           className="hidden md:flex items-center gap-2 bg-forest-600 text-cream-100 px-5 py-2.5 text-sm font-medium tracking-wide hover:bg-forest-700 transition-colors duration-200 rounded-sm"
@@ -99,9 +75,7 @@ export default function Navbar() {
           Shop Now
         </a>
 
-        {/* =====================================================
-            MOBILE MENU BUTTON
-        ====================================================== */}
+        {/* Mobile Toggle */}
         <button
           className="md:hidden p-2 text-forest-600"
           onClick={() => setOpen(!open)}
@@ -111,13 +85,11 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* =====================================================
-          MOBILE MENU
-      ====================================================== */}
+      {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
           open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        } bg-[#f0e8d9] border-t border-gold-200`}
+        } bg-cream-200 border-t border-gold-200`}
       >
         <ul className="flex flex-col px-6 py-4 gap-4">
           {navLinks.map(({ label, href }) => (
