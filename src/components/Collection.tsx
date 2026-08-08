@@ -412,53 +412,126 @@ export const kurtis: Product[] = [
 
 function ProductCard({ product }: { product: Product }) {
   const [hover, setHover] = useState(false);
+  const [quickView, setQuickView] = useState(false);
+
   return (
-    <div
-      className="group relative bg-cream-200 overflow-hidden border border-gold-200/50 hover:shadow-xl hover:shadow-forest-500/10 transition-all duration-500"
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      <div className="relative aspect-[3/4] overflow-hidden">
-        <img
-          src={product.image}
-          alt={product.name}
-          className={`w-full h-full object-cover transition-transform duration-700 ${hover ? 'scale-110' : 'scale-100'}`}
-        />
-        <div className={`absolute inset-0 bg-forest-900/30 transition-opacity duration-500 ${hover ? 'opacity-100' : 'opacity-0'}`} />
-        <span className="absolute top-3 left-3 bg-cream-100/90 text-forest-600 text-[10px] font-semibold tracking-[0.15em] uppercase px-3 py-1">
-          {product.category}
-        </span>
-        <div className={`absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500`}>
-          <button className="w-full bg-gold-400 text-forest-900 py-2.5 text-xs font-semibold tracking-wide flex items-center justify-center gap-2 hover:bg-gold-300 transition-colors">
-            <Eye size={14} />
-            Quick View
-          </button>
+    <>
+      <div
+        className="group relative bg-cream-200 overflow-hidden border border-gold-200/50 hover:shadow-xl hover:shadow-forest-500/10 transition-all duration-500"
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
+        <div className="relative aspect-[3/4] overflow-hidden">
+          <img
+            src={product.image}
+            alt={product.name}
+            className={`w-full h-full object-cover transition-transform duration-700 ${hover ? 'scale-110' : 'scale-100'}`}
+          />
+          <div className={`absolute inset-0 bg-forest-900/30 transition-opacity duration-500 ${hover ? 'opacity-100' : 'opacity-0'}`} />
+          <span className="absolute top-3 left-3 bg-cream-100/90 text-forest-600 text-[10px] font-semibold tracking-[0.15em] uppercase px-3 py-1">
+            {product.category}
+          </span>
+
+          <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+            <button
+              type="button"
+              onClick={() => setQuickView(true)}
+              className="w-full bg-gold-400 text-forest-900 py-2.5 text-xs font-semibold tracking-wide flex items-center justify-center gap-2 hover:bg-gold-300 transition-colors"
+            >
+              <Eye size={14} />
+              Quick View
+            </button>
+          </div>
+        </div>
+
+        <div className="p-5">
+          <h3 className="font-display text-lg font-semibold text-forest-600 mb-2">
+            {product.name}
+          </h3>
+
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-xl font-bold text-red-600">
+              PRICE: ₹{product.price}
+            </span>
+            <span className="text-sm text-gray-400 line-through">
+              ₹{Math.round((product.price ?? 0) / 0.7)}
+            </span>
+            <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">
+              30% OFF
+            </span>
+          </div>
+
+          <p className="text-xs text-forest-700/60 leading-relaxed line-clamp-2">
+            {product.description}
+          </p>
         </div>
       </div>
-<div className="p-5">
-  <h3 className="font-display text-lg font-semibold text-forest-600 mb-2">
-    {product.name}
-  </h3>
 
-<div className="flex items-center gap-2 mb-3">
-  <span className="text-xl font-bold text-red-600">
-    PRICE: ₹{product.price}
-  </span>
+      {quickView && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4"
+          onClick={() => setQuickView(false)}
+        >
+          <div
+            className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-cream-50 shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setQuickView(false)}
+              aria-label="Close quick view"
+              className="absolute top-3 right-3 z-10 w-10 h-10 rounded-full bg-white/90 text-forest-900 text-2xl flex items-center justify-center hover:bg-gold-400 transition-colors"
+            >
+              ×
+            </button>
 
-  <span className="text-sm text-gray-400 line-through">
-    ₹{Math.round((product.price ?? 0) / 0.7)}
-  </span>
+            <div className="grid md:grid-cols-2">
+              <div className="bg-cream-200 min-h-[320px]">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full max-h-[70vh] object-contain"
+                />
+              </div>
 
-  <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">
-    30% OFF
-  </span>
-</div>
+              <div className="p-6 sm:p-10 flex flex-col justify-center">
+                <span className="text-gold-500 text-xs font-semibold tracking-[0.25em] uppercase mb-3">
+                  {product.category}
+                </span>
 
-  <p className="text-xs text-forest-700/60 leading-relaxed line-clamp-2">
-    {product.description}
-  </p>
-</div>
-      </div>
+                <h2 className="font-display text-3xl text-forest-600 mb-5">
+                  {product.name}
+                </h2>
+
+                <div className="flex items-center gap-3 flex-wrap mb-6">
+                  <span className="text-2xl font-bold text-red-600">
+                    PRICE: ₹{product.price}
+                  </span>
+                  <span className="text-base text-gray-400 line-through">
+                    ₹{Math.round((product.price ?? 0) / 0.7)}
+                  </span>
+                  <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">
+                    30% OFF
+                  </span>
+                </div>
+
+                <p className="text-forest-700/70 leading-relaxed mb-8">
+                  {product.description}
+                </p>
+
+                <button
+                  type="button"
+                  onClick={() => setQuickView(false)}
+                  className="w-full bg-forest-600 text-cream-100 py-3 text-sm font-semibold tracking-wide hover:bg-forest-700 transition-colors rounded-sm"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
