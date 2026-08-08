@@ -26,28 +26,26 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? 'bg-cream-200 shadow-md shadow-forest-500/10 backdrop-blur-sm'
-          : 'bg-transparent'
+          : 'bg-cream-200'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
 
-        {/* Logo */}
-        <a href="#home" className="flex items-center gap-3">
+        {/* LOGO - CROPPED FROM logo.png */}
+        <a
+          href="#home"
+          className="relative flex items-center w-[82px] h-[72px] overflow-hidden"
+          aria-label="KeKa Collections"
+        >
           <img
             src="/KeKa-Collections/logo.png"
             alt="KeKa Collections"
-            className="h-12 w-auto object-contain"
+            className="absolute w-[180px] h-auto max-w-none"
+            style={{
+              left: '-52px',
+              top: '-16px',
+            }}
           />
-
-          <div>
-            <h1 className="font-display text-2xl text-forest-600">
-              KeKa
-            </h1>
-
-            <p className="text-xs tracking-[0.3em] uppercase text-gold-500">
-              Collections
-            </p>
-          </div>
         </a>
 
         {/* Desktop Nav */}
@@ -66,7 +64,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Shop Now */}
+        {/* CTA */}
         <a
           href="#contact"
           className="hidden md:flex items-center gap-2 bg-forest-600 text-cream-100 px-5 py-2.5 text-sm font-medium tracking-wide hover:bg-forest-700 transition-colors duration-200 rounded-sm"
