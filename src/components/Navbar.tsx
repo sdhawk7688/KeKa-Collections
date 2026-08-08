@@ -1,4 +1,3 @@
-```tsx
 import { useState, useEffect } from 'react';
 import {
   Menu,
@@ -29,7 +28,8 @@ const CART_KEY = 'keka-cart';
 
 function getCart(): CartItem[] {
   try {
-    return JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+    const saved = localStorage.getItem(CART_KEY);
+    return saved ? JSON.parse(saved) : [];
   } catch {
     return [];
   }
@@ -69,29 +69,30 @@ export default function Navbar() {
   };
 
   const increaseQuantity = (id: number) => {
-    updateCart(
-      cart.map((item) =>
-        item.id === id
-          ? { ...item, quantity: item.quantity + 1 }
-          : item
-      )
+    const updatedCart = cart.map((item) =>
+      item.id === id
+        ? { ...item, quantity: item.quantity + 1 }
+        : item
     );
+
+    updateCart(updatedCart);
   };
 
   const decreaseQuantity = (id: number) => {
-    updateCart(
-      cart
-        .map((item) =>
-          item.id === id
-            ? { ...item, quantity: item.quantity - 1 }
-            : item
-        )
-        .filter((item) => item.quantity > 0)
-    );
+    const updatedCart = cart
+      .map((item) =>
+        item.id === id
+          ? { ...item, quantity: item.quantity - 1 }
+          : item
+      )
+      .filter((item) => item.quantity > 0);
+
+    updateCart(updatedCart);
   };
 
   const removeItem = (id: number) => {
-    updateCart(cart.filter((item) => item.id !== id));
+    const updatedCart = cart.filter((item) => item.id !== id);
+    updateCart(updatedCart);
   };
 
   const cartCount = cart.reduce(
@@ -133,7 +134,7 @@ export default function Navbar() {
             </div>
           </a>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <ul className="hidden md:flex items-center gap-8">
             {navLinks.map(({ label, href }) => (
               <li key={label}>
@@ -154,13 +155,12 @@ export default function Navbar() {
             type="button"
             onClick={() => setCartOpen(true)}
             className="relative flex items-center gap-2 bg-forest-600 text-cream-100 px-5 py-2.5 text-sm font-medium tracking-wide hover:bg-forest-700 transition-colors duration-200 rounded-sm"
-            aria-label="Open shopping cart"
           >
-            <ShoppingBag size={17} />
-            <span className="hidden sm:inline">Cart</span>
+            <ShoppingBag size={15} />
+            <span>Cart</span>
 
             {cartCount > 0 && (
-              <span className="absolute -top-2 -right-2 min-w-5 h-5 px-1 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center">
+              <span className="absolute -top-2 -right-2 min-w-[20px] h-5 px-1 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center">
                 {cartCount}
               </span>
             )}
@@ -179,9 +179,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ${
-            open
-              ? 'max-h-96 opacity-100'
-              : 'max-h-0 opacity-0'
+            open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           } bg-cream-200 border-t border-gold-200`}
         >
           <ul className="flex flex-col px-6 py-4 gap-4">
@@ -233,8 +231,7 @@ export default function Navbar() {
                 </h2>
 
                 <p className="text-xs text-forest-700/60 mt-1">
-                  {cartCount}{' '}
-                  {cartCount === 1 ? 'item' : 'items'}
+                  {cartCount} {cartCount === 1 ? 'item' : 'items'}
                 </p>
               </div>
 
@@ -342,7 +339,7 @@ export default function Navbar() {
             {/* Cart Total */}
             {cart.length > 0 && (
               <div className="border-t border-gold-200 p-5 bg-cream-100">
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between">
                   <span className="text-sm font-semibold text-forest-600">
                     Total
                   </span>
@@ -351,11 +348,6 @@ export default function Navbar() {
                     ₹{cartTotal.toLocaleString('en-IN')}
                   </span>
                 </div>
-
-                <p className="text-xs text-forest-700/60">
-                  Taxes and delivery charges, if applicable, will be
-                  confirmed separately.
-                </p>
               </div>
             )}
           </div>
@@ -364,4 +356,3 @@ export default function Navbar() {
     </>
   );
 }
-```
