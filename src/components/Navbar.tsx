@@ -15,7 +15,9 @@ export default function Navbar() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
+
     window.addEventListener('scroll', onScroll);
+
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
@@ -34,13 +36,14 @@ export default function Navbar() {
           <img
             src="/KeKa-Collections/logo.png"
             alt="KeKa Collections"
-            className="h-12 w-auto"
+            className="h-12 w-auto object-contain"
           />
 
           <div>
             <h1 className="font-display text-2xl text-forest-600">
               KeKa
             </h1>
+
             <p className="text-xs tracking-[0.3em] uppercase text-gold-500">
               Collections
             </p>
@@ -56,13 +59,14 @@ export default function Navbar() {
                 className="text-sm font-medium text-forest-600 hover:text-gold-500 tracking-wide transition-colors duration-200 relative group"
               >
                 {label}
+
                 <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gold-400 group-hover:w-full transition-all duration-300" />
               </a>
             </li>
           ))}
         </ul>
 
-        {/* CTA */}
+        {/* Shop Now */}
         <a
           href="#contact"
           className="hidden md:flex items-center gap-2 bg-forest-600 text-cream-100 px-5 py-2.5 text-sm font-medium tracking-wide hover:bg-forest-700 transition-colors duration-200 rounded-sm"
@@ -71,7 +75,7 @@ export default function Navbar() {
           Shop Now
         </a>
 
-        {/* Mobile toggle */}
+        {/* Mobile Toggle */}
         <button
           className="md:hidden p-2 text-forest-600"
           onClick={() => setOpen(!open)}
@@ -99,6 +103,7 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+
           <li>
             <a
               href="#contact"
