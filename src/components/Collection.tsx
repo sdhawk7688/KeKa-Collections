@@ -826,7 +826,7 @@ export const sarees: Product[] = [
   category: 'Saree',
   image: '/KeKa-Collections/images/products/Viscose Khadi Handloom Saree With a Blouse piece (4).jpeg',
   price: 1800,
-  description: 'Viscose   Khadi Handloom Saree With a Blouse piece
+  description: 'Viscose   Khadi Handloom Saree With a Blouse piece'
 },
 ];
 
