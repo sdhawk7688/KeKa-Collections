@@ -718,7 +718,7 @@ export const sarees: Product[] = [
   },
   {
     id: 90,
-    name: 'Organic   Cotton-By-Linen And Cotton-Linen Blend Sarees',
+    name: 'Organic Cotton-By-Linen And Cotton-Linen Blend Sarees',
     category: 'Saree',
     image: '/KeKa-Collections/images/products/Organic Cotton-By-Linen And Cotton-Linen Blend Sarees (1).jpeg',
     price: 1900,
@@ -726,7 +726,7 @@ export const sarees: Product[] = [
   },
   {
     id: 91,
-    name: 'Organic   Cotton-By-Linen And Cotton-Linen Blend Sarees',
+    name: 'Organic Cotton-By-Linen And Cotton-Linen Blend Sarees',
     category: 'Saree',
     image: '/KeKa-Collections/images/products/Organic Cotton-By-Linen And Cotton-Linen Blend Sarees (2).jpeg',
     price: 1900,
