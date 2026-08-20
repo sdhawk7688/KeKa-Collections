@@ -796,6 +796,38 @@ export const sarees: Product[] = [
   price: 1800,
   description: 'Premium Quality Soft Tussar'
 },
+{
+  id: 102,
+  name: 'Viscose   Khadi Handloom Saree With a Blouse piece ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Viscose Khadi Handloom Saree With a Blouse piece (1).jpeg',
+  price: 1800,
+  description: 'Viscose   Khadi Handloom Saree With a Blouse piece'
+},
+{
+  id: 103,
+  name: 'Viscose   Khadi Handloom Saree With a Blouse piece ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Viscose Khadi Handloom Saree With a Blouse piece (2).jpeg',
+  price: 1800,
+  description: 'Viscose   Khadi Handloom Saree With a Blouse piece'
+},
+{
+  id: 104,
+  name: 'Viscose   Khadi Handloom Saree With a Blouse piece ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Viscose Khadi Handloom Saree With a Blouse piece (3).jpeg',
+  price: 1800,
+  description: 'Viscose   Khadi Handloom Saree With a Blouse piece'
+},
+{
+  id: 105,
+  name: 'Viscose   Khadi Handloom Saree With a Blouse piece ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Viscose Khadi Handloom Saree With a Blouse piece (4).jpeg',
+  price: 1800,
+  description: 'Viscose   Khadi Handloom Saree With a Blouse piece
+},
 ];
 
 export const kurtis: Product[] = [
