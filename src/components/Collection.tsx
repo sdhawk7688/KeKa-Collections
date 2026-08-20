@@ -717,22 +717,6 @@ export const sarees: Product[] = [
     description: 'Maheshwari Silk   Sarees With Hand Printed With BP',
   },
   {
-    id: 90,
-    name: 'Organic Cotton-By-Linen And Cotton-Linen Blend Sarees',
-    category: 'Saree',
-    image: '/KeKa-Collections/images/products/Organic Cotton-By-Linen And Cotton-Linen Blend Sarees (1).jpeg.',
-    price: 1900,
-    description: 'Organic   Cotton-By-Linen And Cotton-Linen Blend Sarees',
-  },
-  {
-    id: 91,
-    name: 'Organic Cotton-By-Linen And Cotton-Linen Blend Sarees',
-    category: 'Saree',
-    image: '/KeKa-Collections/images/products/Organic Cotton-By-Linen And Cotton-Linen Blend Sarees (1).jpeg',
-    price: 1900,
-    description: 'Organic   Cotton-By-Linen And Cotton-Linen Blend Sarees',
-  },
-  {
     id: 92,
     name: 'Reshamkota Saree with   Chikankari Work',
     category: 'Saree',
