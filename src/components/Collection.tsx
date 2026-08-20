@@ -748,6 +748,14 @@ export const sarees: Product[] = [
     price: 1900,
     description: 'Reshamkota Saree with   Chikankari Work',
   },
+  {
+    id: 96,
+    name: 'Premium Quality Soft Tussar ',
+    category: 'Saree',
+    image: '/KeKa-Collections/images/products/soft tussar (1).jpeg',
+    price: 1800,
+    description: 'Premium Quality Soft Tussar',
+  }
 ];
 
 export const kurtis: Product[] = [
