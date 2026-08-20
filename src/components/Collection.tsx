@@ -801,7 +801,7 @@ export const sarees: Product[] = [
   name: 'Viscose   Khadi Handloom Saree With a Blouse piece ',
   category: 'Saree',
   image: '/KeKa-Collections/images/products/Viscose Khadi Handloom Saree With a Blouse piece (1).jpeg',
-  price: 1800,
+  price: 1300,
   description: 'Viscose   Khadi Handloom Saree With a Blouse piece'
 },
 {
@@ -809,7 +809,7 @@ export const sarees: Product[] = [
   name: 'Viscose   Khadi Handloom Saree With a Blouse piece ',
   category: 'Saree',
   image: '/KeKa-Collections/images/products/Viscose Khadi Handloom Saree With a Blouse piece (2).jpeg',
-  price: 1800,
+  price: 1300,
   description: 'Viscose   Khadi Handloom Saree With a Blouse piece'
 },
 {
@@ -817,7 +817,7 @@ export const sarees: Product[] = [
   name: 'Viscose   Khadi Handloom Saree With a Blouse piece ',
   category: 'Saree',
   image: '/KeKa-Collections/images/products/Viscose Khadi Handloom Saree With a Blouse piece (3).jpeg',
-  price: 1800,
+  price: 1300,
   description: 'Viscose   Khadi Handloom Saree With a Blouse piece'
 },
 {
@@ -825,8 +825,64 @@ export const sarees: Product[] = [
   name: 'Viscose   Khadi Handloom Saree With a Blouse piece ',
   category: 'Saree',
   image: '/KeKa-Collections/images/products/Viscose Khadi Handloom Saree With a Blouse piece (4).jpeg',
-  price: 1800,
+  price: 1300,
   description: 'Viscose   Khadi Handloom Saree With a Blouse piece'
+},
+{
+  id: 106,
+  name: 'Applique Work Sarees For Women ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/applique (1).jpeg',
+  price: 1300,
+  description: 'Applique Work Sarees For Women '
+},
+{
+  id: 107,
+  name: 'Applique Work Sarees For Women ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/applique (2).jpeg',
+  price: 1300,
+  description: 'Applique Work Sarees For Women '
+},
+{
+  id: 108,
+  name: 'Applique Work Sarees For Women ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/applique (3).jpeg',
+  price: 1300,
+  description: 'Applique Work Sarees For Women '
+},
+{
+  id: 109,
+  name: 'Applique Work Sarees For Women ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/applique (4).jpeg',
+  price: 1300,
+  description: 'Applique Work Sarees For Women '
+},
+{
+  id: 110,
+  name: 'Applique Work Sarees For Women ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/applique (5).jpeg',
+  price: 1300,
+  description: 'Applique Work Sarees For Women '
+},
+{
+  id: 111,
+  name: 'Applique Work Sarees For Women ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/applique (6).jpeg',
+  price: 1300,
+  description: 'Applique Work Sarees For Women '
+},
+{
+  id: 112,
+  name: 'Applique Work Sarees For Women ',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/applique (7).jpeg',
+  price: 1300,
+  description: 'Applique Work Sarees For Women '
 },
 ];
 
