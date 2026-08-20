@@ -755,7 +755,47 @@ export const sarees: Product[] = [
     image: '/KeKa-Collections/images/products/soft tussar (1).jpeg',
     price: 1800,
     description: 'Premium Quality Soft Tussar',
-  }
+  },
+  {
+  id: 97,
+  name: 'Premium Quality Soft Tussar',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/soft tussar (2).jpeg',
+  price: 1800,
+  description: 'Premium Quality Soft Tussar'
+},
+{
+  id: 98,
+  name: 'Premium Quality Soft Tussar',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/soft tussar (3).jpeg',
+  price: 1800,
+  description: 'Premium Quality Soft Tussar'
+},
+{
+  id: 99,
+  name: 'Premium Quality Soft Tussar',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/soft tussar (4).jpeg',
+  price: 1800,
+  description: 'Premium Quality Soft Tussar'
+},
+{
+  id: 100,
+  name: 'Premium Quality Soft Tussar',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/soft tussar (5).jpeg',
+  price: 1800,
+  description: 'Premium Quality Soft Tussar'
+},
+{
+  id: 101,
+  name: 'Premium Quality Soft Tussar',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/soft tussar (6).jpeg',
+  price: 1800,
+  description: 'Premium Quality Soft Tussar'
+},
 ];
 
 export const kurtis: Product[] = [
