@@ -117,11 +117,11 @@ export const sarees: Product[] = [
 },
 {
   id: 14,
-  name: 'Pure Gachi Tussar Handloom Jamdani Saree',
+  name: 'Premium Quality Dhakai Jamdani With BP',
   category: 'Saree',
   image: '/KeKa-Collections/images/products/image (15).jpeg',
-  price: 6000,
-  description: 'Premium handcrafted Gachi Tussar Jamdani Saree combining heritage weaving with modern elegance.',
+  price: 1300,
+  description: 'Premium Quality Dhakai Jamdani With BP combining heritage weaving with modern elegance.',
 },
 {
   id: 15,
