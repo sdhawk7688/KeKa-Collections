@@ -173,11 +173,11 @@ export const sarees: Product[] = [
 },
 {
   id: 21,
-  name: 'Premium Quality Dhakai Jamdani With BP',
+  name: 'Premium Poly Shimmer Silk',
   category: 'Saree',
   image: '/KeKa-Collections/images/products/image (22).jpeg',
   price: 1500,
-  description: 'Stylish Dhakai Jamdani Saree with premium woven patterns and blouse piece, perfect for festive gatherings.',
+  description: 'Premium Poly Shimmer Silk saree with premium woven patterns and blouse piece, perfect for festive gatherings.',
 },
 {
   id: 22,
