@@ -77,11 +77,11 @@ export const sarees: Product[] = [
 },
 {
   id: 9,
-  name: 'Pure Gachi Tussar Handloom Jamdani Saree',
+  name: 'Semi Gadwal Pattu Saree',
   category: 'Saree',
   image: '/KeKa-Collections/images/products/image (10).jpeg',
-  price: 5800,
-  description: 'Exquisite Pure Gachi Tussar Handloom Jamdani Saree crafted with intricate weaving and timeless elegance for a graceful traditional look.',
+  price: 1800,
+  description: 'Semi Gadwal Pattu Saree crafted with intricate weaving and timeless elegance for a graceful traditional look.',
 },
 {
   id: 10,
