@@ -1820,6 +1820,7 @@ cart.push({
   return (
     <>
       <div
+          id={`product-${product.id}`}
         className="group relative bg-cream-200 overflow-hidden border border-gold-200/50 hover:shadow-xl hover:shadow-forest-500/10 transition-all duration-500"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
