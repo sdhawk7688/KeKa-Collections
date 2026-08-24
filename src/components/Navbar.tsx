@@ -475,10 +475,14 @@ const orderLines = cart.map(
                     ₹{cartTotal.toLocaleString('en-IN')}
                   </span>
                 </div>
-
-                <p className="text-xs text-forest-700/60 leading-relaxed text-center mt-4 px-4">
-To order, tap Share Order below and send it to the person who shared this link with you on WhatsApp. They will assist you with any questions or delivery guidance.
+<p className="text-sm font-bold leading-relaxed text-center mt-5 px-4 text-red-700">
+  <span className="text-forest-600">★</span>{' '}
+  To order, tap <span className="text-red-700">Share Order</span> below
+  and send it to the person who shared this link with you on WhatsApp.
+  They will assist you with any questions or delivery guidance.{' '}
+  <span className="text-forest-600">★</span>
 </p>
+
                 {/* Share Order Button */}
                 <button
                   type="button"
