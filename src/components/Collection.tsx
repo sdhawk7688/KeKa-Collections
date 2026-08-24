@@ -884,6 +884,7 @@ export const sarees: Product[] = [
   price: 1300,
   description: 'Applique Work Sarees For Women '
 },
+{
     id: 113,
   name: 'Jamdani with Katadhan Work',
   category: 'Saree',
