@@ -125,8 +125,6 @@ const orderLines = cart.map(
     `• ${item.name} × ${item.quantity}\n  ₹${item.price.toLocaleString('en-IN')} each\n  ${item.link || window.location.origin}`
 );
 
-    );
-
     const message = [
       'Hello KeKa Collections! 👋',
       '',
