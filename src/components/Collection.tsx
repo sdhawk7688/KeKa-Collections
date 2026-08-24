@@ -1791,12 +1791,22 @@ export const kurtis: Product[] = [
 function ProductCard({ product }: { product: Product }) {
   const [hover, setHover] = useState(false);
   const [quickView, setQuickView] = useState(false);
-  useEffect(() => {
-  const productHash = window.location.hash;
+useEffect(() => {
+  const openSharedProduct = () => {
+    const productHash = window.location.hash;
 
-  if (productHash === `#product-${product.id}`) {
-    setQuickView(true);
-  }
+    if (productHash === `#product-${product.id}`) {
+      setQuickView(true);
+    }
+  };
+
+  openSharedProduct();
+
+  window.addEventListener('hashchange', openSharedProduct);
+
+  return () => {
+    window.removeEventListener('hashchange', openSharedProduct);
+  };
 }, [product.id]);
 
    const addToCart = () => {
