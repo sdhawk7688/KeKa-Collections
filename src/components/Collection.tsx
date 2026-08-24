@@ -1214,7 +1214,7 @@ id: 129,
   name: 'Soft Cotton Silk Saree',
   category: 'Saree',
   collection: 'COTTON SILK',
-  image: '/KeKa-Collections/images/products/Soft Cotton Silk-8.jpeg',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-9.jpeg',
   price: 1300,
   description: 'Soft Cotton Silk Saree'
 },
