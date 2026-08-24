@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Eye } from 'lucide-react';
+import { Eye, ShoppingBag } from 'lucide-react';
 
 export interface Product {
   id: number;
@@ -1866,6 +1866,14 @@ function ProductCard({ product }: { product: Product }) {
           <p className="text-xs text-forest-700/60 leading-relaxed line-clamp-2">
             {product.description}
           </p>
+          <button
+  type="button"
+  onClick={addToCart}
+  className="w-full mt-4 bg-forest-600 text-cream-100 py-3 text-sm font-semibold tracking-wide hover:bg-forest-700 transition-colors rounded-sm flex items-center justify-center gap-2"
+>
+  <ShoppingBag size={16} />
+  Add to Cart
+</button>
         </div>
       </div>
 
