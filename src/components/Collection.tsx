@@ -1597,6 +1597,150 @@ id: 129,
   price: 2400,
   description: 'Khadi Tonchoi Sraee'
 },
+{
+  id: 180,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-1.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 181,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-2.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 182,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-3.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 183,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-4.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 184,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-5.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 185,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-6.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 186,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-7.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 187,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-8.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 188,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-9.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 189,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-10.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 190,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-11.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 191,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-12.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 192,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-13.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 193,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-14.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 194,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-15.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
+{
+  id: 195,
+  name: 'Premium Bishnupuri Pure Katan Silk',
+  category: 'Saree',
+  collection: 'KATAN',
+  image: '/KeKa-Collections/images/products/bpuri-24-08-2026-16.jpeg',
+  price: 5200,
+  description: 'Premium Bishnupuri Pure Katan Silk'
+},
 ];
 
 export const kurtis: Product[] = [
