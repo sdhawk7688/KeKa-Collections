@@ -1310,22 +1310,103 @@ function ProductCard({ product }: { product: Product }) {
   );
 }
 
-export default function Collection({ id, title, subtitle, products }: { id: string; title: string; subtitle: string; products: Product[] }) {
+export default function Collection({
+  id,
+  title,
+  subtitle,
+  products,
+}: {
+  id: string;
+  title: string;
+  subtitle: string;
+  products: Product[];
+}) {
+  const [selectedCategory, setSelectedCategory] = useState('ALL');
+
+  const categories = [
+    'ALL',
+    'TUSSAR',
+    'JAMDANI',
+    'GADWAL',
+    'POCHAMPALLY',
+    'IKAT',
+    'KATAN',
+    'MAHESHWARI SILK',
+    'KHADI HANDLOOM',
+    'KANTHA STITCH',
+    'RESHAMKOTA',
+    'COTTON SILK',
+    'POLY SHIMMER',
+    'APPLIQUÉ',
+  ];
+
+  const filteredProducts =
+    selectedCategory === 'ALL'
+      ? products
+      : products.filter(
+          (product) =>
+            product.category === 'Saree' &&
+            product.collection?.toUpperCase() === selectedCategory
+        );
+
   return (
     <section id={id} className="py-20 bg-cream-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-gold-500 text-xs font-medium tracking-[0.3em] uppercase">Collection</span>
-          <h2 className="font-display text-4xl sm:text-5xl text-forest-600 mt-3 mb-4">{title}</h2>
-          <p className="text-forest-700/70 text-base leading-relaxed">{subtitle}</p>
+
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <span className="text-gold-500 text-xs font-medium tracking-[0.3em] uppercase">
+            Collection
+          </span>
+
+          <h2 className="font-display text-4xl sm:text-5xl text-forest-600 mt-3 mb-4">
+            {title}
+          </h2>
+
+          <p className="text-forest-700/70 text-base leading-relaxed">
+            {subtitle}
+          </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[...products]
-  .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity))
-  .map((p) => (
-    <ProductCard key={p.id} product={p} />
-          ))}
+
+        {/* CATEGORY TABS */}
+        <div className="mb-12">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
+            {categories.map((category) => (
+              <button
+                key={category}
+                type="button"
+                onClick={() => setSelectedCategory(category)}
+                className={`px-4 py-2.5 text-xs sm:text-sm font-semibold tracking-wide border transition-all duration-300 ${
+                  selectedCategory === category
+                    ? 'bg-forest-600 text-cream-50 border-forest-600 shadow-md'
+                    : 'bg-transparent text-forest-600 border-gold-200 hover:bg-gold-100 hover:border-gold-400'
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
         </div>
+
+        {/* PRODUCTS */}
+        {filteredProducts.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[...filteredProducts]
+              .sort(
+                (a, b) =>
+                  (a.price ?? Infinity) - (b.price ?? Infinity)
+              )
+              .map((p) => (
+                <ProductCard key={p.id} product={p} />
+              ))}
+          </div>
+        ) : (
+          <div className="text-center py-16">
+            <p className="text-forest-700/60 text-sm">
+              No products found in this collection.
+            </p>
+          </div>
+        )}
+
       </div>
     </section>
   );
