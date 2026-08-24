@@ -1246,6 +1246,24 @@ id: 129,
   price: 1300,
   description: 'Soft Cotton Silk Saree'
 },
+{
+  id: 141,
+  name: 'Matka Silk Jamdani Durga Puja Special',
+  category: 'Saree',
+  collection: 'JAMDANI',
+  image: '/KeKa-Collections/images/products/Matka Jamdani-1.jpeg',
+  price: 2600,
+  description: 'Matka Silk Jamdani Durga Puja Special'
+},
+{
+  id: 142,
+  name: 'Matka Silk Jamdani Durga Puja Special',
+  category: 'Saree',
+  collection: 'JAMDANI',
+  image: '/KeKa-Collections/images/products/Matka Jamdani-2.jpeg',
+  price: 2600,
+  description: 'Matka Silk Jamdani Durga Puja Special'
+},
 ];
 
 export const kurtis: Product[] = [
