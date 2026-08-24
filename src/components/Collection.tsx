@@ -1792,58 +1792,6 @@ function ProductCard({ product }: { product: Product }) {
   const [hover, setHover] = useState(false);
   const [quickView, setQuickView] = useState(false);
 
-  const addToCart = () => {
-    try {
-      const savedCart = localStorage.getItem('keka-cart');
-      const cart = savedCart ? JSON.parse(savedCart) : [];
-
-      const existingItem = cart.find(
-        (item: { id: number }) => item.id === product.id
-      );
-
-      let updatedCart;
-
-      if (existingItem) {
-        updatedCart = cart.map(
-          (item: { id: number; quantity: number }) =>
-            item.id === product.id
-              ? {
-                  ...item,
-                  quantity: item.quantity + 1,
-                }
-              : item
-        );
-      } else {
-        updatedCart = [
-          ...cart,
-          {
-            id: product.id,
-            name: product.name,
-            image: product.image,
-            price: product.price ?? 0,
-            quantity: 1,
-          },
-        ];
-      }
-
-      localStorage.setItem(
-        'keka-cart',
-        JSON.stringify(updatedCart)
-      );
-
-      // Tell Navbar that the cart has changed
-      window.dispatchEvent(new Event('cartUpdated'));
-
-      // Open quick view is not necessary after adding
-      setQuickView(false);
-
-      // Small confirmation
-      window.alert(`${product.name} added to cart!`);
-    } catch (error) {
-      console.error('Error adding product to cart:', error);
-    }
-  };
-
   return (
     <>
       <div
@@ -1851,29 +1799,17 @@ function ProductCard({ product }: { product: Product }) {
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
-        {/* PRODUCT IMAGE */}
         <div className="relative aspect-[3/4] overflow-hidden">
           <img
             src={product.image}
             alt={product.name}
-            className={`w-full h-full object-cover transition-transform duration-700 ${
-              hover ? 'scale-110' : 'scale-100'
-            }`}
+            className={`w-full h-full object-cover transition-transform duration-700 ${hover ? 'scale-110' : 'scale-100'}`}
           />
-
-          <div
-            className={`absolute inset-0 bg-forest-900/30 transition-opacity duration-500 ${
-              hover ? 'opacity-100' : 'opacity-0'
-            }`}
-          />
-
+          <div className={`absolute inset-0 bg-forest-900/30 transition-opacity duration-500 ${hover ? 'opacity-100' : 'opacity-0'}`} />
           <span className="absolute top-3 left-3 bg-cream-100/90 text-forest-600 text-[10px] font-semibold tracking-[0.15em] uppercase px-3 py-1">
-            {product.category === 'Saree'
-              ? product.collection
-              : product.category}
+            {product.category === 'Saree' ? product.collection : product.category}
           </span>
 
-          {/* QUICK VIEW */}
           <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
             <button
               type="button"
@@ -1886,45 +1822,29 @@ function ProductCard({ product }: { product: Product }) {
           </div>
         </div>
 
-        {/* PRODUCT DETAILS */}
         <div className="p-5">
           <h3 className="font-display text-lg font-semibold text-forest-600 mb-2">
             {product.name}
           </h3>
 
-          <div className="flex items-center gap-2 mb-3 flex-wrap">
+          <div className="flex items-center gap-2 mb-3">
             <span className="text-xl font-bold text-red-600">
               PRICE: ₹{product.price}
             </span>
-
             <span className="text-sm text-gray-400 line-through">
               ₹{Math.round((product.price ?? 0) / 0.7)}
             </span>
-
             <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">
               30% OFF
             </span>
           </div>
 
-          <p className="text-xs text-forest-700/60 leading-relaxed line-clamp-2 mb-4">
+          <p className="text-xs text-forest-700/60 leading-relaxed line-clamp-2">
             {product.description}
           </p>
-
-          {/* ADD TO CART */}
-          <button
-            type="button"
-            onClick={addToCart}
-            className="w-full bg-forest-600 text-cream-100 py-3 text-sm font-semibold tracking-wide hover:bg-forest-700 transition-colors rounded-sm flex items-center justify-center gap-2"
-          >
-            <ShoppingBag size={16} />
-            Add to Cart
-          </button>
         </div>
       </div>
 
-      {/* =========================
-          QUICK VIEW MODAL
-      ========================== */}
       {quickView && (
         <div
           className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4"
@@ -1934,7 +1854,6 @@ function ProductCard({ product }: { product: Product }) {
             className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-cream-50 shadow-2xl"
             onClick={(event) => event.stopPropagation()}
           >
-            {/* CLOSE */}
             <button
               type="button"
               onClick={() => setQuickView(false)}
@@ -1945,7 +1864,6 @@ function ProductCard({ product }: { product: Product }) {
             </button>
 
             <div className="grid md:grid-cols-2">
-              {/* IMAGE */}
               <div className="bg-cream-200 min-h-[320px]">
                 <img
                   src={product.image}
@@ -1954,12 +1872,9 @@ function ProductCard({ product }: { product: Product }) {
                 />
               </div>
 
-              {/* DETAILS */}
               <div className="p-6 sm:p-10 flex flex-col justify-center">
                 <span className="text-gold-500 text-xs font-semibold tracking-[0.25em] uppercase mb-3">
-                  {product.category === 'Saree'
-                    ? product.collection
-                    : product.category}
+                  {product.category === 'Saree' ? product.collection : product.category}
                 </span>
 
                 <h2 className="font-display text-3xl text-forest-600 mb-5">
@@ -1970,11 +1885,9 @@ function ProductCard({ product }: { product: Product }) {
                   <span className="text-2xl font-bold text-red-600">
                     PRICE: ₹{product.price}
                   </span>
-
                   <span className="text-base text-gray-400 line-through">
                     ₹{Math.round((product.price ?? 0) / 0.7)}
                   </span>
-
                   <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">
                     30% OFF
                   </span>
@@ -1984,21 +1897,10 @@ function ProductCard({ product }: { product: Product }) {
                   {product.description}
                 </p>
 
-                {/* QUICK VIEW ADD TO CART */}
-                <button
-                  type="button"
-                  onClick={addToCart}
-                  className="w-full bg-forest-600 text-cream-100 py-3 text-sm font-semibold tracking-wide hover:bg-forest-700 transition-colors rounded-sm flex items-center justify-center gap-2 mb-3"
-                >
-                  <ShoppingBag size={17} />
-                  Add to Cart
-                </button>
-
-                {/* CLOSE */}
                 <button
                   type="button"
                   onClick={() => setQuickView(false)}
-                  className="w-full border border-forest-600 text-forest-600 py-3 text-sm font-semibold tracking-wide hover:bg-forest-600 hover:text-cream-100 transition-colors rounded-sm"
+                  className="w-full bg-forest-600 text-cream-100 py-3 text-sm font-semibold tracking-wide hover:bg-forest-700 transition-colors rounded-sm"
                 >
                   Close
                 </button>
