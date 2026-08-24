@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Eye, ShoppingBag } from 'lucide-react';
 
 export interface Product {
