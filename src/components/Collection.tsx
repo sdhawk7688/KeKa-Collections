@@ -884,6 +884,13 @@ export const sarees: Product[] = [
   price: 1300,
   description: 'Applique Work Sarees For Women '
 },
+    id: 113,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan (1).jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
 ];
 
 export const kurtis: Product[] = [
