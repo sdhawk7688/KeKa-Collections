@@ -1226,6 +1226,7 @@ id: 129,
   image: '/KeKa-Collections/images/products/mulcotton-2.jpeg',
   price: 900,
   description: 'Pure Mul Cotton Saree With BP'
+},
 {
   id: 139,
   name: 'Pure Mul Cotton Saree With BP',
