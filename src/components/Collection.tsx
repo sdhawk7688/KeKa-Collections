@@ -888,7 +888,7 @@ export const sarees: Product[] = [
     id: 113,
   name: 'Jamdani with Katadhan Work',
   category: 'Saree',
-  image: '/KeKa-Collections/images/products/katadhan-.jpeg',
+  image: '/KeKa-Collections/images/products/Katadhan-1.jpeg',
   price: 2800,
   description: 'Katdhana Work Jamdani'
 },
