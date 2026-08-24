@@ -120,9 +120,11 @@ export default function Navbar() {
     if (cart.length === 0) {
       return;
     }
+const orderLines = cart.map(
+  (item) =>
+    `• ${item.name} × ${item.quantity}\n  ₹${item.price.toLocaleString('en-IN')} each\n  ${item.link || window.location.origin}`
+);
 
-    const orderLines = cart.map(
-      (item) => `• ${item.name} × ${item.quantity}`
     );
 
     const message = [
