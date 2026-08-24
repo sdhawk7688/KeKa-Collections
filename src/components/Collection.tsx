@@ -1210,17 +1210,33 @@ id: 129,
   price: 1300,
   description: 'Soft Cotton Silk Saree'
 },
-{
   id: 137,
   name: 'Soft Cotton Silk Saree',
   category: 'Saree',
   collection: 'COTTON SILK',
-  image: '/KeKa-Collections/images/products/Soft Cotton Silk-9.jpeg',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-8.jpeg',
   price: 1300,
   description: 'Soft Cotton Silk Saree'
 },
 {
   id: 138,
+  name: 'Pure Mul Cotton Saree With BP',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/mulcotton-2.jpeg',
+  price: 900,
+  description: 'Pure Mul Cotton Saree With BP'
+{
+  id: 139,
+  name: 'Pure Mul Cotton Saree With BP',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/mulcotton-1.jpeg',
+  price: 900,
+  description: 'Pure Mul Cotton Saree With BP'
+},
+{
+  id: 140,
   name: 'Soft Cotton Silk Saree',
   category: 'Saree',
   collection: 'COTTON SILK',
