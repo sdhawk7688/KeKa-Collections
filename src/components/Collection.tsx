@@ -1809,7 +1809,7 @@ cart.push({
   image: product.image,
   price: product.price ?? 0,
   quantity: 1,
-  link: `${window.location.origin}/#product-${product.id}`,
+link: `${window.location.origin}${window.location.pathname}#product-${product.id}`,
       });
     }
 
