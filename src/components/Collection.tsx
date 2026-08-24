@@ -1552,6 +1552,51 @@ id: 129,
   price: 3800,
   description: 'Bishnupuri Katan Block Print With Blouse Piece'
 },
+{
+  id: 175,
+  name: 'Khadi Tonchoi Sraee',
+  category: 'Saree',
+  collection: 'KHADI HANDLOOM',
+  image: '/KeKa-Collections/images/products/tonchoi1.jpeg',
+  price: 2400,
+  description: 'Khadi Tonchoi Sraee'
+},
+{
+  id: 176,
+  name: 'Khadi Tonchoi Sraee',
+  category: 'Saree',
+  collection: 'KHADI HANDLOOM',
+  image: '/KeKa-Collections/images/products/tonchoi2.jpeg',
+  price: 2400,
+  description: 'Khadi Tonchoi Sraee'
+},
+{
+  id: 177,
+  name: 'Khadi Tonchoi Sraee',
+  category: 'Saree',
+  collection: 'KHADI HANDLOOM',
+  image: '/KeKa-Collections/images/products/tonchoi3.jpeg',
+  price: 2400,
+  description: 'Khadi Tonchoi Sraee'
+},
+{
+  id: 178,
+  name: 'Khadi Tonchoi Sraee',
+  category: 'Saree',
+  collection: 'KHADI HANDLOOM',
+  image: '/KeKa-Collections/images/products/tonchoi4.jpeg',
+  price: 2400,
+  description: 'Khadi Tonchoi Sraee'
+},
+{
+  id: 179,
+  name: 'Khadi Tonchoi Sraee',
+  category: 'Saree',
+  collection: 'KHADI HANDLOOM',
+  image: '/KeKa-Collections/images/products/tonchoi5.jpeg',
+  price: 2400,
+  description: 'Khadi Tonchoi Sraee'
+},
 ];
 
 export const kurtis: Product[] = [
