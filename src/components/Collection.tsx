@@ -1803,12 +1803,13 @@ function ProductCard({ product }: { product: Product }) {
     if (existingItem) {
       existingItem.quantity += 1;
     } else {
-      cart.push({
-        id: product.id,
-        name: product.name,
-        image: product.image,
-        price: product.price ?? 0,
-        quantity: 1,
+cart.push({
+  id: product.id,
+  name: product.name,
+  image: product.image,
+  price: product.price ?? 0,
+  quantity: 1,
+  link: `${window.location.origin}/#product-${product.id}`,
       });
     }
 
