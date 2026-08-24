@@ -885,10 +885,130 @@ export const sarees: Product[] = [
   description: 'Applique Work Sarees For Women '
 },
 {
-    id: 113,
+  id: 113,
   name: 'Jamdani with Katadhan Work',
   category: 'Saree',
   image: '/KeKa-Collections/images/products/Katadhan-1.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 114,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-2.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 115,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-3.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 116,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-4.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 117,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-5.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 118,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-6.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 119,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-7.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 120,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-8.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 121,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-9.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 122,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-10.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 123,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-11.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 124,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-12.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 125,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-13.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 126,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-14.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 127,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-15.jpeg',
+  price: 2800,
+  description: 'Katdhana Work Jamdani'
+},
+{
+  id: 128,
+  name: 'Jamdani with Katadhan Work',
+  category: 'Saree',
+  image: '/KeKa-Collections/images/products/Katadhan-16.jpeg',
   price: 2800,
   description: 'Katdhana Work Jamdani'
 },
