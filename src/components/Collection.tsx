@@ -1263,6 +1263,7 @@ id: 129,
   image: '/KeKa-Collections/images/products/Matka Jamdani-2.jpeg',
   price: 2600,
   description: 'Matka Silk Jamdani Durga Puja Special'
+},  
 {
   id: 143,
   name: 'Bomkai Ikat',
