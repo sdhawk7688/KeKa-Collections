@@ -935,7 +935,7 @@ export const sarees: Product[] = [
   id: 106,
   name: 'Applique Work Sarees For Women ',
   category: 'Saree',
-    collection: 'OTHER',
+    collection: 'APPLIQUÉ',
   image: '/KeKa-Collections/images/products/applique (1).jpeg',
   price: 1300,
   description: 'Applique Work Sarees For Women '
@@ -944,7 +944,7 @@ export const sarees: Product[] = [
   id: 107,
   name: 'Applique Work Sarees For Women ',
   category: 'Saree',
-    collection: 'OTHER',
+    collection: 'APPLIQUÉ',
   image: '/KeKa-Collections/images/products/applique (2).jpeg',
   price: 1300,
   description: 'Applique Work Sarees For Women '
@@ -953,7 +953,7 @@ export const sarees: Product[] = [
   id: 108,
   name: 'Applique Work Sarees For Women ',
   category: 'Saree',
-    collection: 'OTHER',
+    collection: 'APPLIQUÉ',
   image: '/KeKa-Collections/images/products/applique (3).jpeg',
   price: 1300,
   description: 'Applique Work Sarees For Women '
@@ -962,7 +962,7 @@ export const sarees: Product[] = [
   id: 109,
   name: 'Applique Work Sarees For Women ',
   category: 'Saree',
-    collection: 'OTHER',
+    collection: 'APPLIQUÉ',
   image: '/KeKa-Collections/images/products/applique (4).jpeg',
   price: 1300,
   description: 'Applique Work Sarees For Women '
@@ -971,7 +971,7 @@ export const sarees: Product[] = [
   id: 110,
   name: 'Applique Work Sarees For Women ',
   category: 'Saree',
-    collection: 'OTHER',
+    collection: 'APPLIQUÉ',
   image: '/KeKa-Collections/images/products/applique (5).jpeg',
   price: 1300,
   description: 'Applique Work Sarees For Women '
@@ -980,7 +980,7 @@ export const sarees: Product[] = [
   id: 111,
   name: 'Applique Work Sarees For Women ',
   category: 'Saree',
-    collection: 'OTHER',
+    collection: 'APPLIQUÉ',
   image: '/KeKa-Collections/images/products/applique (6).jpeg',
   price: 1300,
   description: 'Applique Work Sarees For Women '
@@ -989,7 +989,7 @@ export const sarees: Product[] = [
   id: 112,
   name: 'Applique Work Sarees For Women ',
   category: 'Saree',
-    collection: 'OTHER',
+    collection: 'APPLIQUÉ',
   image: '/KeKa-Collections/images/products/applique (7).jpeg',
   price: 1300,
   description: 'Applique Work Sarees For Women '
