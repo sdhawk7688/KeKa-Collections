@@ -1791,6 +1791,13 @@ export const kurtis: Product[] = [
 function ProductCard({ product }: { product: Product }) {
   const [hover, setHover] = useState(false);
   const [quickView, setQuickView] = useState(false);
+  useEffect(() => {
+  const productHash = window.location.hash;
+
+  if (productHash === `#product-${product.id}`) {
+    setQuickView(true);
+  }
+}, [product.id]);
 
    const addToCart = () => {
     const savedCart = localStorage.getItem('keka-cart');
