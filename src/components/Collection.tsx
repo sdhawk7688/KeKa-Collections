@@ -2010,6 +2010,7 @@ function ProductCard({ product }: { product: Product }) {
     </>
   );
 }
+
 export default function Collection({
   id,
   title,
