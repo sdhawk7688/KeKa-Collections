@@ -1138,6 +1138,96 @@ export const sarees: Product[] = [
   price: 2800,
   description: 'Katdhana Work Jamdani'
 },
+{
+id: 129,
+  name: 'Soft Cotton Silk Saree',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-1.jpg',
+  price: 1300,
+  description: 'Soft Cotton Silk Saree'
+},
+{
+  id: 130,
+  name: 'Soft Cotton Silk Saree',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-2.jpg',
+  price: 1300,
+  description: 'Soft Cotton Silk Saree'
+},
+{
+  id: 131,
+  name: 'Soft Cotton Silk Saree',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-3.jpg',
+  price: 1300,
+  description: 'Soft Cotton Silk Saree'
+},
+{
+  id: 132,
+  name: 'Soft Cotton Silk Saree',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-4.jpg',
+  price: 1300,
+  description: 'Soft Cotton Silk Saree'
+},
+{
+  id: 133,
+  name: 'Soft Cotton Silk Saree',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-5.jpg',
+  price: 1300,
+  description: 'Soft Cotton Silk Saree'
+},
+{
+  id: 134,
+  name: 'Soft Cotton Silk Saree',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-6.jpg',
+  price: 1300,
+  description: 'Soft Cotton Silk Saree'
+},
+{
+  id: 135,
+  name: 'Soft Cotton Silk Saree',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-7.jpg',
+  price: 1300,
+  description: 'Soft Cotton Silk Saree'
+},
+{
+  id: 136,
+  name: 'Soft Cotton Silk Saree',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-8.jpg',
+  price: 1300,
+  description: 'Soft Cotton Silk Saree'
+},
+{
+  id: 137,
+  name: 'Soft Cotton Silk Saree',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-9.jpg',
+  price: 1300,
+  description: 'Soft Cotton Silk Saree'
+},
+{
+  id: 138,
+  name: 'Soft Cotton Silk Saree',
+  category: 'Saree',
+  collection: 'COTTON SILK',
+  image: '/KeKa-Collections/images/products/Soft Cotton Silk-10.jpg',
+  price: 1300,
+  description: 'Soft Cotton Silk Saree'
+},
 ];
 
 export const kurtis: Product[] = [
