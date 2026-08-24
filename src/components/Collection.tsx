@@ -1792,6 +1792,30 @@ function ProductCard({ product }: { product: Product }) {
   const [hover, setHover] = useState(false);
   const [quickView, setQuickView] = useState(false);
 
+   const addToCart = () => {
+    const savedCart = localStorage.getItem('keka-cart');
+    const cart = savedCart ? JSON.parse(savedCart) : [];
+
+    const existingItem = cart.find(
+      (item: { id: number }) => item.id === product.id
+    );
+
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({
+        id: product.id,
+        name: product.name,
+        image: product.image,
+        price: product.price ?? 0,
+        quantity: 1,
+      });
+    }
+
+    localStorage.setItem('keka-cart', JSON.stringify(cart));
+
+    window.dispatchEvent(new Event('cartUpdated'));
+  };
   return (
     <>
       <div
