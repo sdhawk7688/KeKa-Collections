@@ -1991,6 +1991,25 @@ export default function Collection({
             product.category === 'Saree' &&
             product.collection?.toUpperCase() === selectedCategory
         );
+  useEffect(() => {
+  const productHash = window.location.hash;
+
+  if (!productHash.startsWith('#product-')) {
+    return;
+  }
+
+  const productId = Number(
+    productHash.replace('#product-', '')
+  );
+
+  const sharedProduct = products.find(
+    (product) => product.id === productId
+  );
+
+  if (sharedProduct) {
+    setSelectedCategory('ALL');
+  }
+}, [products]);
 
   return (
     <section id={id} className="py-20 bg-cream-50">
