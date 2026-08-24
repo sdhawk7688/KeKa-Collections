@@ -476,6 +476,9 @@ const orderLines = cart.map(
                   </span>
                 </div>
 
+                <p className="text-xs text-forest-700/60 leading-relaxed text-center mt-4 px-4">
+To order, tap Share Order below and send it to the person who shared this link with you on WhatsApp. They will assist you with any questions or delivery guidance.
+</p>
                 {/* Share Order Button */}
                 <button
                   type="button"
