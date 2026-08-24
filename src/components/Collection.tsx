@@ -1263,6 +1263,68 @@ id: 129,
   image: '/KeKa-Collections/images/products/Matka Jamdani-2.jpeg',
   price: 2600,
   description: 'Matka Silk Jamdani Durga Puja Special'
+{
+  id: 143,
+  name: 'Bomkai Ikat',
+  category: 'Saree',
+  collection: 'IKAT',
+  image: '/KeKa-Collections/images/products/Bomkai Ikat-1.jpeg',
+  price: 1800,
+  description: 'Bomkai Ikat'
+},
+{
+  id: 144,
+  name: 'Bomkai Ikat',
+  category: 'Saree',
+  collection: 'IKAT',
+  image: '/KeKa-Collections/images/products/Bomkai Ikat-2.jpeg',
+  price: 1800,
+  description: 'Bomkai Ikat'
+},
+{
+  id: 145,
+  name: 'Bomkai Ikat',
+  category: 'Saree',
+  collection: 'IKAT',
+  image: '/KeKa-Collections/images/products/Bomkai Ikat-3.jpeg',
+  price: 1800,
+  description: 'Bomkai Ikat'
+},
+{
+  id: 146,
+  name: 'Bomkai Ikat',
+  category: 'Saree',
+  collection: 'IKAT',
+  image: '/KeKa-Collections/images/products/Bomkai Ikat-4.jpeg',
+  price: 1800,
+  description: 'Bomkai Ikat'
+},
+{
+  id: 147,
+  name: 'Bomkai Ikat',
+  category: 'Saree',
+  collection: 'IKAT',
+  image: '/KeKa-Collections/images/products/Bomkai Ikat-5.jpeg',
+  price: 1800,
+  description: 'Bomkai Ikat'
+},
+{
+  id: 148,
+  name: 'Bomkai Ikat',
+  category: 'Saree',
+  collection: 'IKAT',
+  image: '/KeKa-Collections/images/products/Bomkai Ikat-6.jpeg',
+  price: 1800,
+  description: 'Bomkai Ikat'
+},
+{
+  id: 149,
+  name: 'Bomkai Ikat',
+  category: 'Saree',
+  collection: 'IKAT',
+  image: '/KeKa-Collections/images/products/Bomkai Ikat-7.jpeg',
+  price: 1800,
+  description: 'Bomkai Ikat'
 },
 ];
 
