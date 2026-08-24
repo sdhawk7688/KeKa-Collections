@@ -1925,6 +1925,7 @@ export default function Collection({
   products: Product[];
 }) {
   const [selectedCategory, setSelectedCategory] = useState('ALL');
+  const [searchTerm, setSearchTerm] = useState('');
 
   const categories = [
     'ALL',
